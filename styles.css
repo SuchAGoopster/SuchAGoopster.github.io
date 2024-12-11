@@ -1,0 +1,148 @@
+/* Global Styles */
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #007BFF;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    margin: 0 0 1rem;
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-btn {
+    background: white;
+    color: #007BFF;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.nav-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 1rem;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #007BFF;
+}
+
+.card p, .card ol {
+    margin: 1rem 0;
+}
+
+.gif-container {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.gif-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Animations */
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .nav-btn {
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Orange Note */
+.note {
+    background-color: #fee16e; /* More orange shade */
+    border-left: 5px solid #ff9800; /* Darker orange border */
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.note-header {
+    font-weight: bold;
+    color: #d87c00; /* Darker orange text */
+}
+
+.note-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.note-list li {
+    margin: 0.5rem 0;
+}
+
+.note-mini {
+    font-size: 0.8rem;
+    color: #d87c00; /* Darker orange for the mini note */
+    margin-top: 0.5rem;
+}
